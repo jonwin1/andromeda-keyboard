@@ -1,0 +1,6 @@
+if SHIELD_ORBIT_A3
+
+config ZMK_KEYBOARD_NAME
+    default "Orbit A3"
+
+endif # SHIELD_ORBIT_A3

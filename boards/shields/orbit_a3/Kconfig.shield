@@ -1,0 +1,2 @@
+config SHIELD_ORBIT_A3
+    def_bool $(shields_list_contains,orbit_a3)
