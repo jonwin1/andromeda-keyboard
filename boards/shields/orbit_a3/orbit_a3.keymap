@@ -2,13 +2,24 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        lm: layer_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&mkp>;
+            display-name = "Layer-Mouse";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            // | BTN1    | BTN2          | BTN3          |
+            // | BTN1    | BTN2     | BTN3     |
             bindings = <
-                &mkp LCLK &ht 2 &mkp MCLK &ht 1 &mkp RCLK
+                &mkp LCLK &lm 2 MCLK &lm 1 RCLK
             >;
         };
 
