@@ -6,8 +6,21 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            // | BTN1    | BTN2          | BTN3          |
             bindings = <
-                &mkp LCLK &mkp MCLK &mkp RCLK
+                &mkp LCLK &ht 2 &mkp MCLK &ht 1 &mkp RCLK
+            >;
+        };
+
+        scroll {
+            bindings = <
+                &trans &sys_reset &trans
+            >;
+        };
+
+        slow {
+            bindings = <
+                &trans &trans &bootloader
             >;
         };
     };
