@@ -33,7 +33,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <600>;
+        cpi = <500>;
         invert-x;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -57,7 +57,7 @@
         scroll_mode {
             layers = <1>;
             input-processors = <
-                &zip_xy_scaler 1 15
+                &zip_xy_scaler 1 16
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
             >;
@@ -65,7 +65,7 @@
 
         slow_pointer {
             layers = <2>;
-            input-processors = <&zip_xy_scaler 2 6>;
+            input-processors = <&zip_xy_scaler 1 3>;
         };
     };
 };
