@@ -19,7 +19,7 @@
         default_layer {
             // | BTN1    | BTN2     | BTN3     |
             bindings = <
-                &mkp LCLK &lm 1 MCLK &lm 2 RCLK
+                &mkp LCLK &lm 1 RCLK &lm 2 MCLK
             >;
         };
 
