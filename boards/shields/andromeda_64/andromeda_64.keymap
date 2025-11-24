@@ -109,16 +109,16 @@
 // | F1  | F2  | F3  | F4  | F5  | F6  |       **       | F7  | F8  | F9  | F10 | F11 | F12 |
 // |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |       **       | PREV| VDN | VUP | NEXT|  \  |  `  |
 // | ESC |     |     | PSEL|PSCRN| PB  |       **       | LEFT| DOWN| UP  |RIGHT|  |  |  ´  |
-// | LCTL|     |     |     |     | INS |       **       |     |PAUSE| MUTE|     |  ^  |     |
+// | LCTL|ULOCK|     |     |     | INS |       **       |     |PAUSE| MUTE|     |  ^  |     |
 //             | HOME| END | XXX | SPC | RET | ** | DEL | BSPC| XXX | PGUP| PGDN|
 //                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| LALT|
             bindings = <
-&kp F1     &kp F2       &kp F3       &kp F4        &kp F5       &kp F6                   /**/          &kp F7     &kp F8       &kp F9       &kp F10    &kp F11      &kp F12
-&bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_SEL 5             /**/          &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp SV_BSLH  &kp SV_GRAVE
-&kp ESC    &none        &none        &kp LS(PSCRN) &kp PSCRN    &kp PAUSE_BREAK          /**/          &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp SV_PIPE  &kp SV_ACUTE
-&kp LCTRL  &none        &none        &none         &none        &kp INS                  /**/          &none      &kp C_PP     &kp C_MUTE   &none      &kp SV_CARET &none
-                        &kp HOME     &kp END       &none        &kp SV_SPACE    &kp RET  /**/ &kp DEL  &kp BSPC   &none        &kp PG_UP    &kp PG_DN
-                                                   &kp LALT     &kp LGUI        &kp LSFT /**/ &kp RSFT &kp LGUI   &kp LALT
+&kp F1     &kp F2         &kp F3       &kp F4        &kp F5       &kp F6                   /**/          &kp F7     &kp F8       &kp F9       &kp F10    &kp F11      &kp F12
+&bt BT_CLR &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_SEL 5             /**/          &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp SV_BSLH  &kp SV_GRAVE
+&kp ESC    &none          &none        &kp LS(PSCRN) &kp PSCRN    &kp PAUSE_BREAK          /**/          &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp SV_PIPE  &kp SV_ACUTE
+&kp LCTRL  &studio_unlock &none        &none         &none        &kp INS                  /**/          &none      &kp C_PP     &kp C_MUTE   &none      &kp SV_CARET &none
+                          &kp HOME     &kp END       &none        &kp SV_SPACE    &kp RET  /**/ &kp DEL  &kp BSPC   &none        &kp PG_UP    &kp PG_DN
+                                                     &kp LALT     &kp LGUI        &kp LSFT /**/ &kp RSFT &kp LGUI   &kp LALT
             >;
         };
     };

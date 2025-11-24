@@ -1,23 +1,13 @@
-# This file was generated from a template. Edit it to match your keyboard.
-# See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files
-# for instructions.
-
 file_format: "1"
 id: andromeda_64
 name: Andromeda 64
 type: shield
-
-# Set this to a URL that documents the keyboard.
-url: https://example.com
-
-# Add any features your keyboard supports here.
-# See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
-features:
-  - keys
-  - studio  # Remove this line if your keyboard will not support ZMK Studio
+url: https://github.com/jonwin1/andromeda-keyboard/
 requires:
   - pro_micro
-
+features:
+  - keys
+  - studio
 siblings:
   - andromeda_64_left
   - andromeda_64_right
