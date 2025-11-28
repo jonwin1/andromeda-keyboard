@@ -86,22 +86,22 @@
 // | TAB |  q  |  w  |  e  |  r  |  t  |       **       |  y  |  u  |  i  |  o  |  p  |  å  |
 // | ESC |  a  |  s  |  d  |  f  |  g  |       **       |  h  |  j  |  k  |  l  |  ö  |  ä  |
 // |LCTRL|  z  |  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  |  -  |RCTRL|
-//             |  '  |  "  |LAYER| SPC | RET | ** | DEL | BSPC|LAYER|  {  |  }  |
-//                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| LALT|
+//             |  '  |  "  |LAYER| SPC |SFT R| ** | RSFT| BSPC|LAYER|  {  |  }  |
+//                         |     | LALT| LGUI| ** | LGUI| LALT|     |
 // With Shift
 // |  ~  |  !  |  @  |  #  |  $  |  %  |       **       |  &  |  /  |  (  |  )  |  =  |  ?  |
 // | TAB |  Q  |  W  |  E  |  R  |  T  |       **       |  Y  |  U  |  I  |  O  |  P  |  Å  |
 // | ESC |  A  |  S  |  D  |  F  |  G  |       **       |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
 // |LCTRL|  Z  |  X  |  C  |  V  |  B  |       **       |  N  |  M  |  ;  |  :  |  _  |RCTRL|
-//             |  <  |  >  |LAYER| SPC | RET | ** | DEL | BSPC|LAYER|  [  |  ]  |
-//                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| LALT|
+//             |  <  |  >  |LAYER| SPC |SFT R| ** | RSFT| BSPC|LAYER|  [  |  ]  |
+//                         |     | LALT| LGUI| ** | LGUI| LALT|     |
             bindings = <
-&star_tilde &kp SV_N1  &n2_at   &kp SV_N3 &n4_dllr &kp SV_N5             /**/          &kp SV_N6 &kp SV_N7 &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
-&kp TAB     &kp SV_Q   &kp SV_W &kp SV_E  &kp SV_R &kp SV_T              /**/          &kp SV_Y  &kp SV_U  &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
-&kp ESC     &kp SV_A   &kp SV_S &kp SV_D  &kp SV_F &kp SV_G              /**/          &kp SV_H  &kp SV_J  &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
-&kp LCTRL   &kp SV_Z   &kp SV_X &kp SV_C  &kp SV_V &kp SV_B              /**/          &kp SV_N  &kp SV_M  &kp SV_COMMA &kp SV_PERIOD &kp SV_MINUS    &kp RCTRL
-                       &sqt_lt  &dqt_gt   &mo 1    &kp SV_SPACE &kp RET  /**/ &kp DEL  &kp BSPC  &mo 1     &lbrc_lbkt   &rbrc_rbkt
-                                          &kp LALT &kp LGUI     &kp LSFT /**/ &kp RSFT &kp LGUI  &kp LALT
+&star_tilde &kp SV_N1  &n2_at   &kp SV_N3 &n4_dllr &kp SV_N5                  /**/          &kp SV_N6 &kp SV_N7 &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
+&kp TAB     &kp SV_Q   &kp SV_W &kp SV_E  &kp SV_R &kp SV_T                   /**/          &kp SV_Y  &kp SV_U  &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
+&kp ESC     &kp SV_A   &kp SV_S &kp SV_D  &kp SV_F &kp SV_G                   /**/          &kp SV_H  &kp SV_J  &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
+&kp LCTRL   &kp SV_Z   &kp SV_X &kp SV_C  &kp SV_V &kp SV_B                   /**/          &kp SV_N  &kp SV_M  &kp SV_COMMA &kp SV_PERIOD &kp SV_MINUS    &kp RCTRL
+                       &sqt_lt  &dqt_gt   &mo 1    &kp SV_SPACE &mt LSFT RET  /**/ &kp RSFT &kp BSPC  &mo 1     &lbrc_lbkt   &rbrc_rbkt
+                                          &none    &kp LALT     &kp LGUI      /**/ &kp LGUI &kp LALT  &none
             >;
         };
         layer_layer { // Layer 1
