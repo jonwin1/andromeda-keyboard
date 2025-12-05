@@ -1,0 +1,12 @@
+file_format: "1"
+id: andromeda_62
+name: Andromeda 62
+type: shield
+url: https://github.com/jonwin1/andromeda-keyboard/
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - andromeda_62_left
+  - andromeda_62_right

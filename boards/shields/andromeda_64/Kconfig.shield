@@ -1,5 +1,0 @@
-config SHIELD_ANDROMEDA_64_LEFT
-    def_bool $(shields_list_contains,andromeda_64_left)
-
-config SHIELD_ANDROMEDA_64_RIGHT
-    def_bool $(shields_list_contains,andromeda_64_right)
