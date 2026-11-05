@@ -157,7 +157,7 @@
             bindings = <
 &trans &trans          &trans         &trans         &trans         &trans         /**/         &trans &trans         &trans         &trans         &trans                 &trans
 &trans &trans          &trans         &trans         &trans         &trans         /**/         &trans &trans         &trans         &trans         &trans                 &trans
-&trans &hml LCTRL SV_A &hml LALT SV_S &hml LGUI SV_D &hml LSFT SV_F &trans         /**/         &trans &hmr RSFT SV_J &hmr RGUI SV_K &hmr RALT SV_L &hmr RCTRL SV_O_UMLAUT &trans
+&trans &hml LCTRL SV_A &hml LALT SV_S &hml LGUI SV_D &hml LSFT SV_F &trans         /**/         &trans &hmr RSFT SV_J &hmr LGUI SV_K &hmr LALT SV_L &hmr RCTRL SV_O_UMLAUT &trans
 &none  &trans          &trans         &trans         &trans         &trans         /**/         &trans &trans         &trans         &trans         &trans                 &none
                        &trans         &trans         &trans         &trans &kp RET /**/ &kp DEL &trans &trans         &trans         &trans
                                                                     &none  &none   /**/ &none   &none
